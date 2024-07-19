@@ -1,19 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
 
-  <ItemGroup>
-    <SupportedPlatform Include="browser" />
-  </ItemGroup>
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Functional.DotNet" Version="1.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.7" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PackageId>LDJson.Blazor</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Carlos Bueno</Authors>
+		<RepositoryUrl>https://https://github.com/cabueno360/LDJsonBlazor</RepositoryUrl>
+		<PackageTags>functional csharp .net dotnet ld+json blazor google data markup JSON-LD Blazor Component Rich Results Google Search c#</PackageTags>
+		<Description>
+			Easily generate structured data markup for Google Search using Blazor with this NuGet package. This library simplifies the creation of LD+JSON scripts, ensuring your web pages are optimized for search engine visibility and rich results. Designed for .NET 8 and C#, it integrates seamlessly into your Blazor projects, providing an efficient way to enhance your SEO strategy with minimal effort.
+		</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://https://github.com/cabueno360/LDJsonBlazor</PackageProjectUrl>
+	</PropertyGroup>
+	
+
+	<ItemGroup>
+		<PackageReference Include="Functional.DotNet" Version="1.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.7" />
+	</ItemGroup>
 
 </Project>
