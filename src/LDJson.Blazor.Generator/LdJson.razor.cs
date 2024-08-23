@@ -9,15 +9,11 @@ namespace LDJson.Blazor.Generator
         [Parameter]
         public LdJsonModel Data { get; set; } = LdJsonModel.None;
 
+
         private MarkupString ldJsonMarkup;
 
-        protected override async Task OnParametersSetAsync()
-        {
-            base.OnParametersSet();
-            StateHasChanged();
-        }
-
       
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged(string propertyName)
@@ -30,6 +26,7 @@ namespace LDJson.Blazor.Generator
     {
         public static MarkupString ToMakupString(this LdJsonModel ldJson) 
         {
+            
             string result = $"<script type=\"application/ld+json\">{ldJson.ToLDJson()}</script>";
             return  new MarkupString(result);
         }
