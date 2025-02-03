@@ -26,7 +26,7 @@ namespace LDJson.Blazor.Generator
         public Organization Publisher { get; init; }
         public Organization Provider { get; init; }
         public List<string> Image { get; init; }
-        public AggregateRating AggregateRating { get; init; }
+        public AggregateRating? AggregateRating { get; init; }
         public List<Offer> Offers { get; init; }
         public int TotalHistoricalEnrollment { get; init; }
         public DateTime DatePublished { get; init; }
@@ -51,7 +51,7 @@ namespace LDJson.Blazor.Generator
             Organization publisher,
             Organization provider,
             List<string> image,
-            AggregateRating aggregateRating,
+            AggregateRating? aggregateRating,
             List<Offer> offers,
             int totalHistoricalEnrollment,
             DateTime datePublished,
